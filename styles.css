@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header,
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.header {
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.footer {
+    padding: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    border: 1px solid black;
+    height: 25px;
+    width: 25px;
+}
+
+.square-active {
+    background-color: red;
+}
