@@ -27,10 +27,26 @@ body {
     font-weight: bold;
 }
 
+.config {
+    align-self: center;
+}
+
+button{
+    padding: 5px;
+    background-color: #3882F6;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.config{
+    padding: 5px;
+}
 .container {
     display: grid;
     justify-content: center;
     align-items: center;
+    height: 900;
 }
 
 .square {
