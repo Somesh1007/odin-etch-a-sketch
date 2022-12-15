@@ -3,35 +3,28 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
 }
 
-.header,
-.footer {
+.header {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #1F2937;
     color: #F9FAF8;
-}
-
-.header {
-    padding: 10px;
+    /* padding: 5px; */
     font-size: 40px;
     font-weight: bold;
 }
 
-.footer {
-    padding: 5px;
-    font-size: 25px;
-    font-weight: bold;
-}
-
 .config {
-    align-self: center;
+    padding: 5px;
+    text-align: center;
+    margin: 20px 0px;
 }
 
-button{
+button {
     padding: 5px;
     background-color: #3882F6;
     color: white;
@@ -39,20 +32,16 @@ button{
     font-weight: 600;
 }
 
-.config{
-    padding: 5px;
-}
 .container {
+    box-sizing: border-box;
     display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 900;
+    height: 700px;
+    width: 700px;
 }
 
 .square {
+    box-sizing: border-box;
     border: 1px solid black;
-    height: 25px;
-    width: 25px;
 }
 
 .square-active {

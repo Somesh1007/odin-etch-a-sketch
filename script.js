@@ -4,16 +4,18 @@ const resetButton = document.querySelector('.reset-button')
 
 changeSizeButton.addEventListener('click', changeGridSize)
 resetButton.addEventListener('click', resetGrid)
-
-let gridSize = 16
-generateGrid(gridSize)
+generateGrid(16)
 
 function generateGrid(gridSize) {
-    container.style.cssText = `grid-template-columns: repeat(${gridSize}, 25px [col-start]);`
+    container.style.cssText = `grid-template-columns: repeat(${gridSize}, 0fr); grid-template-rows: repeat(${gridSize} , 0fr)`
+    let height = 700 / gridSize
+    let width = 700 / gridSize
     for (let i = 1; i <= gridSize; i++) {
         for (let j = 1; j <= gridSize; j++) {
             let div = document.createElement('div')
             div.classList.add('square')
+            div.style.height = height + 'px'
+            div.style.width = width + 'px'
             div.addEventListener('mouseover', changeColor)
             container.appendChild(div)
         }
@@ -32,7 +34,6 @@ function changeGridSize() {
         generateGrid(size)
     }
 }
-
 
 function resetGrid() {
     let boxes = document.querySelectorAll('.square-active')
